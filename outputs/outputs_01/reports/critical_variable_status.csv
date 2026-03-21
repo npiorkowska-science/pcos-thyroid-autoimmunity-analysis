@@ -1,0 +1,7 @@
+canonical,matched,raw_column,n_nonmissing,pct_missing
+id,True,Nr KG,1300,0.0
+age,True,Wiek,1300,0.0
+anti_tpo,True,Anty-TPO (ATA_TPO),1055,18.85
+tsh,True,TSH (TSH),1182,9.08
+tg,True,Triglicerydy (TG),1183,9.0
+hdl,True,HDL cholesterol (HDL),1183,9.0

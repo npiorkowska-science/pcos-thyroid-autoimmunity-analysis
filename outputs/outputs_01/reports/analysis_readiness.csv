@@ -1,0 +1,7 @@
+analysis_name,required_columns,all_columns_present,all_columns_have_any_nonmissing,n_complete_cases
+required_for_primary,"age, anti_tpo, tg, hdl",True,True,1053
+required_for_secondary_non_hdl,"age, anti_tpo, tc, hdl",True,True,1053
+required_for_secondary_ogtt120,"age, anti_tpo, glu120",True,True,1035
+lt4_sensitivity_possible,lt4_use,True,False,0
+anti_tg_sensitivity_possible,anti_tg,True,True,257
+strict_euthyroid_possible,"tsh, ft4",True,True,1181
