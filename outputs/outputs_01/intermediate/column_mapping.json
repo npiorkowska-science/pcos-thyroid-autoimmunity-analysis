@@ -1,0 +1,316 @@
+{
+  "id": {
+    "raw_column": "Nr KG",
+    "is_optional": false,
+    "source_block": "id",
+    "candidates": [
+      "Nr KG",
+      "NR KG",
+      "nr kg",
+      "ID",
+      "Id",
+      "id",
+      "patient_id",
+      "subject_id",
+      "Numer",
+      "Nr"
+    ],
+    "matched": true
+  },
+  "age": {
+    "raw_column": "Wiek",
+    "is_optional": false,
+    "source_block": "age",
+    "candidates": [
+      "Wiek",
+      "wiek",
+      "Age",
+      "age"
+    ],
+    "matched": true
+  },
+  "anti_tpo": {
+    "raw_column": "Anty-TPO (ATA_TPO)",
+    "is_optional": false,
+    "source_block": "thyroid",
+    "candidates": [
+      "Anty-TPO (ATA_TPO)",
+      "ATA_TPO",
+      "ANTI_TPO",
+      "ATPO",
+      "TPO"
+    ],
+    "matched": true
+  },
+  "anti_tg": {
+    "raw_column": "Anty-TG (p/c przeciw tyreoglobulinie) (ATG)",
+    "is_optional": true,
+    "source_block": "thyroid",
+    "candidates": [
+      "Anty-TG (p/c przeciw tyreoglobulinie) (ATG)",
+      "ATG",
+      "ANTI_TG"
+    ],
+    "matched": true
+  },
+  "tsh": {
+    "raw_column": "TSH (TSH)",
+    "is_optional": false,
+    "source_block": "thyroid",
+    "candidates": [
+      "TSH (TSH)",
+      "TSH",
+      "L_TSH"
+    ],
+    "matched": true
+  },
+  "ft4": {
+    "raw_column": "FT4 (FT4)",
+    "is_optional": true,
+    "source_block": "thyroid",
+    "candidates": [
+      "FT4 (FT4)",
+      "FT4",
+      "fT4",
+      "L_FT4"
+    ],
+    "matched": true
+  },
+  "ft3": {
+    "raw_column": "FT3 (FT3)",
+    "is_optional": true,
+    "source_block": "thyroid",
+    "candidates": [
+      "FT3 (FT3)",
+      "FT3",
+      "fT3",
+      "L_FT3"
+    ],
+    "matched": true
+  },
+  "tg": {
+    "raw_column": "Triglicerydy (TG)",
+    "is_optional": false,
+    "source_block": "lipids",
+    "candidates": [
+      "Triglicerydy (TG)",
+      "TG",
+      "TRIGLICERYDY",
+      "TRIG"
+    ],
+    "matched": true
+  },
+  "hdl": {
+    "raw_column": "HDL cholesterol (HDL)",
+    "is_optional": false,
+    "source_block": "lipids",
+    "candidates": [
+      "HDL cholesterol (HDL)",
+      "HDL",
+      "L_HDL"
+    ],
+    "matched": true
+  },
+  "tc": {
+    "raw_column": "Cholesterol całkowity (TCHOL)",
+    "is_optional": true,
+    "source_block": "lipids",
+    "candidates": [
+      "Cholesterol całkowity (TCHOL)",
+      "TCHOL",
+      "CHOL_TC",
+      "TC",
+      "CHOL"
+    ],
+    "matched": true
+  },
+  "ldl": {
+    "raw_column": "LDL cholesterol (LDL)",
+    "is_optional": true,
+    "source_block": "lipids",
+    "candidates": [
+      "LDL cholesterol (LDL)",
+      "LDL",
+      "L_LDL"
+    ],
+    "matched": true
+  },
+  "glu0": {
+    "raw_column": "Krzywa cukrowa - 2 punktowa (L_GLU_0)",
+    "is_optional": true,
+    "source_block": "glucose",
+    "candidates": [
+      "Krzywa cukrowa - 2 punktowa (L_GLU_0)",
+      "GLU0",
+      "GLU_0",
+      "L_GLU_0",
+      "L_GLU0"
+    ],
+    "matched": true
+  },
+  "glu120": {
+    "raw_column": "Krzywa cukrowa - 2 punktowa (GLU120)",
+    "is_optional": true,
+    "source_block": "glucose",
+    "candidates": [
+      "Krzywa cukrowa - 2 punktowa (GLU120)",
+      "GLU120",
+      "GLU_120",
+      "L_GLU_120",
+      "L_GLU120"
+    ],
+    "matched": true
+  },
+  "tt": {
+    "raw_column": "Testosteron (L_TESTOS)",
+    "is_optional": true,
+    "source_block": "androgens_optional",
+    "candidates": [
+      "Testosteron (L_TESTOS)",
+      "L_TESTOS",
+      "TESTOS",
+      "TESTOSTERON",
+      "TESTO"
+    ],
+    "matched": true
+  },
+  "ft": {
+    "raw_column": "Testosteron wolny (O41) (TEST-F)",
+    "is_optional": true,
+    "source_block": "androgens_optional",
+    "candidates": [
+      "Testosteron wolny (O41) (TEST-F)",
+      "TEST-F",
+      "TEST_F",
+      "TESTF",
+      "Wolny testosteron"
+    ],
+    "matched": true
+  },
+  "shbg": {
+    "raw_column": "SHBG (SHGB)",
+    "is_optional": true,
+    "source_block": "androgens_optional",
+    "candidates": [
+      "SHBG (SHGB)",
+      "SHBG",
+      "SHGB",
+      "L_SHBG",
+      "L_SHGB"
+    ],
+    "matched": true
+  },
+  "dheas": {
+    "raw_column": "DHEAS (DHEA)",
+    "is_optional": true,
+    "source_block": "androgens_optional",
+    "candidates": [
+      "DHEAS (DHEA)",
+      "DHEAS",
+      "DHEA-S",
+      "DHEA_S",
+      "L_DHEA",
+      "L_DHEAS"
+    ],
+    "matched": true
+  },
+  "andro": {
+    "raw_column": "Androstendion (ANDRO)",
+    "is_optional": true,
+    "source_block": "androgens_optional",
+    "candidates": [
+      "Androstendion (ANDRO)",
+      "ANDRO"
+    ],
+    "matched": true
+  },
+  "amh": {
+    "raw_column": "AMH-anty Mullerian Hormon (AMH)",
+    "is_optional": true,
+    "source_block": "androgens_optional",
+    "candidates": [
+      "AMH-anty Mullerian Hormon (AMH)",
+      "AMH",
+      "L_AMH"
+    ],
+    "matched": true
+  },
+  "lh": {
+    "raw_column": "LH  (LH)",
+    "is_optional": true,
+    "source_block": "androgens_optional",
+    "candidates": [
+      "LH  (LH)",
+      "LH",
+      "L_LH"
+    ],
+    "matched": true
+  },
+  "fsh": {
+    "raw_column": "FSH (FSH)",
+    "is_optional": true,
+    "source_block": "androgens_optional",
+    "candidates": [
+      "FSH (FSH)",
+      "FSH",
+      "L_FSH"
+    ],
+    "matched": true
+  },
+  "ins0": {
+    "raw_column": null,
+    "is_optional": true,
+    "source_block": "insulin_optional",
+    "candidates": [
+      "INS0",
+      "INS_0",
+      "L_INS_0",
+      "L_INS0",
+      "Insulina 0'",
+      "Insulin 0"
+    ],
+    "matched": false
+  },
+  "ins120": {
+    "raw_column": null,
+    "is_optional": true,
+    "source_block": "insulin_optional",
+    "candidates": [
+      "INS120",
+      "INS_120",
+      "L_INS_120",
+      "L_INS120",
+      "Insulina 120'",
+      "Insulin 120"
+    ],
+    "matched": false
+  },
+  "insulin": {
+    "raw_column": "Insulina (INSUL)",
+    "is_optional": true,
+    "source_block": "insulin_optional",
+    "candidates": [
+      "Insulina (INSUL)",
+      "INSUL",
+      "INSULIN",
+      "Insulina"
+    ],
+    "matched": true
+  },
+  "lt4_use": {
+    "raw_column": null,
+    "is_optional": true,
+    "source_block": "medications_optional",
+    "candidates": [
+      "LT4",
+      "Levothyroxine",
+      "L-thyroxine",
+      "Euthyrox",
+      "Letrox",
+      "lewotyroksyna",
+      "leczenie_tarczycy",
+      "thyroid_treatment"
+    ],
+    "matched": false
+  }
+}
