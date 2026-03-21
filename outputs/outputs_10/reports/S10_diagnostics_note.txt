@@ -1,0 +1,13 @@
+S10 model diagnostics and robustness checks
+
+This project uses Firth logistic regression as the reported estimator for binary endpoints.
+Some diagnostic quantities available in common Python libraries (e.g., fitted influence measures,
+certain calibration diagnostics, and spline-vs-linear auxiliary comparisons) were therefore
+computed using an auxiliary standard logistic approximation on the same complete-case cohorts.
+
+Interpretation guidance:
+1. Cohort integrity, event counts, and VIF are directly relevant to the reported analysis cohorts.
+2. AUC, Brier score, calibration summaries, and Hosmer-Lemeshow are descriptive diagnostics.
+3. Hosmer-Lemeshow should be interpreted cautiously, especially under sparse events.
+4. Influence diagnostics and age spline checks are auxiliary approximations and not Firth-native diagnostics.
+5. Sparse events in the TAI-positive group remain an important limitation for precision and model stability.
