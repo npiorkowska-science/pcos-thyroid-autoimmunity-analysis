@@ -1,0 +1,2 @@
+endpoint,comparison,lr_stat,df_diff,p_value,AIC_linear,AIC_spline,note
+ep_primary,auxiliary standard logistic: spline(age) vs linear(age),4.671327746408792,3,0.19750794792881649,519.7675045417461,521.0961767953373,Auxiliary functional-form check; main reported models remain age-adjusted binary models per pipeline.

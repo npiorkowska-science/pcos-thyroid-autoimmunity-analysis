@@ -1,0 +1,4 @@
+model_set,endpoint,n_complete_case,events_total,prevalence,n_tai_pos,n_tai_neg,events_tai_pos,events_tai_neg,risk_tai_pos,risk_tai_neg,rare_event_warning_tai_pos,rare_event_warning_total
+primary,ep_primary,1053,70,0.06647673314339982,84,969,4,66,0.047619047619047616,0.06811145510835913,True,False
+secondary_non_hdl,ep_non_hdl,1053,224,0.2127255460588794,84,969,19,205,0.2261904761904762,0.21155830753353974,False,False
+secondary_ogtt120,ep_ogtt120,1035,156,0.15072463768115943,79,956,14,142,0.17721518987341772,0.14853556485355648,False,False

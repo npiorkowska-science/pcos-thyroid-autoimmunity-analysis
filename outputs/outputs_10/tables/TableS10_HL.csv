@@ -1,0 +1,4 @@
+model_set,endpoint,note,hl_stat,hl_df,hl_p,hl_groups_used
+primary,ep_primary,"Descriptive only; interpret cautiously, especially with sparse events.",12.432294112907332,8,0.1329330199323202,10
+secondary_non_hdl,ep_non_hdl,"Descriptive only; interpret cautiously, especially with sparse events.",15.77745440438274,8,0.045678471213531455,10
+secondary_ogtt120,ep_ogtt120,"Descriptive only; interpret cautiously, especially with sparse events.",2.9157699018772076,8,0.9395316272988328,10

@@ -1,0 +1,7 @@
+term,VIF,model_set,endpoint
+TAI,1.087490990591928,primary,ep_primary
+age,1.0874909905919286,primary,ep_primary
+TAI,1.087490990591928,secondary_non_hdl,ep_non_hdl
+age,1.0874909905919286,secondary_non_hdl,ep_non_hdl
+TAI,1.0831823091145407,secondary_ogtt120,ep_ogtt120
+age,1.0831823091145403,secondary_ogtt120,ep_ogtt120
