@@ -1,0 +1,201 @@
+{
+  "analysis": "sensitivity_analyses",
+  "source_data": "/content/pcos_analysis.parquet",
+  "endpoints": [
+    "ep_primary",
+    "ep_non_hdl",
+    "ep_ogtt120"
+  ],
+  "variants": [
+    "base_TAI_A",
+    "euthyroid_TAI_A",
+    "base_TAI_B",
+    "base_TAI_C",
+    "trim01_99_TAI_A"
+  ],
+  "n_results_total": 15,
+  "n_results_ok": 15,
+  "n_results_failed": 0,
+  "ok_results": [
+    {
+      "variant": "base_TAI_A",
+      "endpoint": "ep_primary",
+      "endpoint_label": "Primary endpoint",
+      "exposure": "tai_A",
+      "n": 1053,
+      "events": 70,
+      "OR": 0.7658349805993099,
+      "CI_low": 0.2108528694966625,
+      "CI_high": 1.66581638021192,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "base_TAI_A",
+      "endpoint": "ep_non_hdl",
+      "endpoint_label": "non-HDL ≥ 130 mg/dL",
+      "exposure": "tai_A",
+      "n": 1053,
+      "events": 224,
+      "OR": 1.0912202311240955,
+      "CI_low": 0.6116881886188331,
+      "CI_high": 1.7630873053904657,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "base_TAI_A",
+      "endpoint": "ep_ogtt120",
+      "endpoint_label": "OGTT 120' glucose ≥ 140 mg/dL",
+      "exposure": "tai_A",
+      "n": 1035,
+      "events": 156,
+      "OR": 1.265196713498669,
+      "CI_low": 0.6251808771056044,
+      "CI_high": 2.1802891511462805,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "euthyroid_TAI_A",
+      "endpoint": "ep_primary",
+      "endpoint_label": "Primary endpoint",
+      "exposure": "tai_A",
+      "n": 1005,
+      "events": 66,
+      "OR": 0.5044001111648557,
+      "CI_low": 0.08604538376031083,
+      "CI_high": 1.2762268706289335,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "euthyroid_TAI_A",
+      "endpoint": "ep_non_hdl",
+      "endpoint_label": "non-HDL ≥ 130 mg/dL",
+      "exposure": "tai_A",
+      "n": 1005,
+      "events": 215,
+      "OR": 1.0302735782870183,
+      "CI_low": 0.5544233721538079,
+      "CI_high": 1.7935979534497963,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "euthyroid_TAI_A",
+      "endpoint": "ep_ogtt120",
+      "endpoint_label": "OGTT 120' glucose ≥ 140 mg/dL",
+      "exposure": "tai_A",
+      "n": 987,
+      "events": 151,
+      "OR": 1.066736460820935,
+      "CI_low": 0.45029083546455956,
+      "CI_high": 1.967030984108823,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "base_TAI_B",
+      "endpoint": "ep_primary",
+      "endpoint_label": "Primary endpoint",
+      "exposure": "tai_B",
+      "n": 1053,
+      "events": 70,
+      "OR": 2.8657853114785805,
+      "CI_low": 0.4723971646724354,
+      "CI_high": 8.77051344672875,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "base_TAI_B",
+      "endpoint": "ep_non_hdl",
+      "endpoint_label": "non-HDL ≥ 130 mg/dL",
+      "exposure": "tai_B",
+      "n": 1053,
+      "events": 224,
+      "OR": 1.5616317763626797,
+      "CI_low": 0.3589862518658237,
+      "CI_high": 4.206869502421892,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "base_TAI_B",
+      "endpoint": "ep_ogtt120",
+      "endpoint_label": "OGTT 120' glucose ≥ 140 mg/dL",
+      "exposure": "tai_B",
+      "n": 1035,
+      "events": 156,
+      "OR": 2.4434475142468126,
+      "CI_low": 0.6151153377152566,
+      "CI_high": 6.751797314007037,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "base_TAI_C",
+      "endpoint": "ep_primary",
+      "endpoint_label": "Primary endpoint",
+      "exposure": "tai_C",
+      "n": 1053,
+      "events": 70,
+      "OR": 1.2843328651938888,
+      "CI_low": 0.3447581105892463,
+      "CI_high": 2.904145207425513,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "base_TAI_C",
+      "endpoint": "ep_non_hdl",
+      "endpoint_label": "non-HDL ≥ 130 mg/dL",
+      "exposure": "tai_C",
+      "n": 1053,
+      "events": 224,
+      "OR": 1.2325176748951325,
+      "CI_low": 0.602384552017519,
+      "CI_high": 2.2062748753126993,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "base_TAI_C",
+      "endpoint": "ep_ogtt120",
+      "endpoint_label": "OGTT 120' glucose ≥ 140 mg/dL",
+      "exposure": "tai_C",
+      "n": 1035,
+      "events": 156,
+      "OR": 0.9646991848942921,
+      "CI_low": 0.36500803193126846,
+      "CI_high": 1.9247499995873414,
+      "n_trimmed": 0
+    },
+    {
+      "variant": "trim01_99_TAI_A",
+      "endpoint": "ep_primary",
+      "endpoint_label": "Primary endpoint",
+      "exposure": "tai_A",
+      "n": 1033,
+      "events": 60,
+      "OR": 0.4913218422472574,
+      "CI_low": 0.08422058458145854,
+      "CI_high": 1.2044852974749451,
+      "n_trimmed": 24
+    },
+    {
+      "variant": "trim01_99_TAI_A",
+      "endpoint": "ep_non_hdl",
+      "endpoint_label": "non-HDL ≥ 130 mg/dL",
+      "exposure": "tai_A",
+      "n": 1034,
+      "events": 216,
+      "OR": 1.135902984848509,
+      "CI_low": 0.6473368010113291,
+      "CI_high": 1.8961019081489532,
+      "n_trimmed": 23
+    },
+    {
+      "variant": "trim01_99_TAI_A",
+      "endpoint": "ep_ogtt120",
+      "endpoint_label": "OGTT 120' glucose ≥ 140 mg/dL",
+      "exposure": "tai_A",
+      "n": 1013,
+      "events": 144,
+      "OR": 1.2808929678034657,
+      "CI_low": 0.623894740643527,
+      "CI_high": 2.2886609284584116,
+      "n_trimmed": 24
+    }
+  ]
+}
