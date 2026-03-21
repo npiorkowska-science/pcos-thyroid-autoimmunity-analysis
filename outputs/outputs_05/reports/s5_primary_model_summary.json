@@ -1,0 +1,26 @@
+{
+  "source_used": "/content/pcos_analysis.parquet",
+  "primary_model_type": "firth_logistic",
+  "exposure": "tai_A",
+  "endpoint": "ep_primary",
+  "covariates": [
+    "TAI_A",
+    "age_c"
+  ],
+  "n": 1053,
+  "events": 70,
+  "events_tai_pos": 4,
+  "n_tai_pos": 84,
+  "events_tai_neg": 66,
+  "n_tai_neg": 969,
+  "brier_score": 0.061994144972267184,
+  "auc": 0.5287240226711233,
+  "converged": true,
+  "optimizer_message": "Converged",
+  "n_iter": 8,
+  "optimizer": "firth_adjusted_score",
+  "bootstrap_success": 2000,
+  "bootstrap_nonconverged": 5,
+  "bootstrap_failed_or_skipped": 0,
+  "age_centering_mean": 21.441595441595442
+}
