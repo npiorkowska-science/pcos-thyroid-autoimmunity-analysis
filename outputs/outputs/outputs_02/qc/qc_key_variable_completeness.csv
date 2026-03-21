@@ -1,8 +1,0 @@
-variable,present_in_dataset,n_total,n_non_missing,pct_non_missing,n_missing,pct_missing,dtype
-age,True,1300,1300,100.0,0,0.0,float64
-anti_tpo,True,1300,1055,81.15,245,18.85,float64
-tsh,True,1300,1182,90.92,118,9.08,float64
-tg,True,1300,1183,91.0,117,9.0,float64
-hdl,True,1300,1183,91.0,117,9.0,float64
-tc,True,1300,1183,91.0,117,9.0,float64
-glu120,True,1300,1162,89.38,138,10.62,float64
