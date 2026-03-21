@@ -1,0 +1,35 @@
+{
+  "source_used": "/content/pcos_analysis.parquet",
+  "n_rows_total": 1300,
+  "n_rows_table1_exposure_defined": 1055,
+  "n_tai_pos": 84,
+  "n_tai_neg": 971,
+  "exposure": "tai_A",
+  "continuous_vars_in_table1": [
+    "age",
+    "tsh",
+    "anti_tpo",
+    "tg",
+    "hdl",
+    "tc",
+    "ldl",
+    "tg_hdl_ratio",
+    "non_hdl",
+    "glu0",
+    "glu120",
+    "tt",
+    "ft",
+    "dheas",
+    "andro",
+    "amh",
+    "lh",
+    "fsh",
+    "shbg"
+  ],
+  "binary_vars_in_table1": [
+    "ep_primary",
+    "ep_non_hdl",
+    "ep_ogtt120",
+    "euthyroid_tsh_only"
+  ]
+}
