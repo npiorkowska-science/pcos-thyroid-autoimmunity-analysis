@@ -1,0 +1,11 @@
+{
+  "saved_at": "2026-03-12T17:03:13.492692Z",
+  "python_version": "3.12.12",
+  "platform": "Linux-6.6.113+-x86_64-with-glibc2.35",
+  "pandas_version": "2.2.2",
+  "numpy_version": "2.0.2",
+  "project_name": "PCOS_TAI_cross_sectional",
+  "project_version": "0.2.1",
+  "random_seed": 20260222,
+  "input_xlsx": "/content/patients_results.xlsx"
+}
