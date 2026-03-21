@@ -1,0 +1,363 @@
+{
+  "project": {
+    "name": "PCOS_TAI_cross_sectional",
+    "version": "0.2.1",
+    "random_seed": 20260222,
+    "analysis_report_standard": "Journal-ready reproducibility notes",
+    "python_recommended": ">=3.10",
+    "notebook": "S00_config"
+  },
+  "paths": {
+    "input_xlsx": "/content/patients_results.xlsx",
+    "sheet_name": "Sheet1",
+    "output_dir": "/content/outputs",
+    "intermediate_dir": "/content/outputs/intermediate",
+    "figures_dir": "/content/outputs/figures",
+    "tables_dir": "/content/outputs/tables",
+    "models_dir": "/content/outputs/models",
+    "reports_dir": "/content/reports",
+    "qc_dir": "/content/outputs/qc",
+    "supplementary_dir": "/content/outputs/supplementary"
+  },
+  "analysis": {
+    "primary_binary_model": "firth",
+    "secondary_binary_model": "firth",
+    "legacy_penalized_logistic_for_sensitivity_only": true,
+    "report_event_counts": true,
+    "generate_flowchart": true,
+    "rare_event_warning_threshold": 10,
+    "bootstrap_random_state": 20260222
+  },
+  "endpoints": {
+    "primary": {
+      "name": "TG_HDL_high",
+      "definition": "TG/HDL > 3.5",
+      "tg_hdl_cutoff": 3.5,
+      "units": "ratio"
+    },
+    "secondary": {
+      "non_hdl_high_mgdl": 130,
+      "ogtt120_igt_mgdl": 140
+    }
+  },
+  "thyroid": {
+    "tsh_euthyroid_low": 0.4,
+    "tsh_euthyroid_high": 4.0,
+    "tsh_uln": 4.0,
+    "ft4_ref_low_optional": null,
+    "ft4_ref_high_optional": null,
+    "euthyroid_flags": {
+      "tsh_only": "TSH between [tsh_euthyroid_low, tsh_euthyroid_high]",
+      "strict_optional": "TSH in range AND FT4 in range"
+    }
+  },
+  "tai_definition": {
+    "A": {
+      "rule": "anti_tpo > TPO_ULN",
+      "tpo_uln": 34.0,
+      "notes": "Primary: anti-TPO above lab ULN"
+    },
+    "B": {
+      "rule": "anti_tpo > TPO_ULN AND tsh > TSH_ULN",
+      "tpo_uln": 34.0,
+      "tsh_uln": 4.0,
+      "notes": "Specific: anti-TPO positive + elevated TSH"
+    },
+    "C": {
+      "rule": "anti_tpo > TPO_HIGH_TITER",
+      "high_titer": 100.0,
+      "notes": "High-titer anti-TPO definition"
+    },
+    "D_optional": {
+      "rule": "(anti_tpo > TPO_ULN) OR (anti_tg > TG_ULN)",
+      "tpo_uln": 34.0,
+      "tg_uln": 115.0,
+      "enabled": false,
+      "notes": "Sensitivity: anti-TPO OR anti-TG positivity"
+    },
+    "E_optional": {
+      "rule": "(anti_tpo > TPO_ULN) AND (anti_tg > TG_ULN)",
+      "tpo_uln": 34.0,
+      "tg_uln": 115.0,
+      "enabled": false,
+      "notes": "Sensitivity: anti-TPO AND anti-TG positivity"
+    }
+  },
+  "units": {
+    "lipids": "mg/dL",
+    "glucose": "mg/dL",
+    "tsh": "mIU/L",
+    "ft4": "lab_specific",
+    "anti_tpo": "lab_specific",
+    "anti_tg": "lab_specific"
+  },
+  "eligibility": {
+    "required_for_primary": [
+      "age",
+      "anti_tpo",
+      "tg",
+      "hdl"
+    ],
+    "required_for_secondary_non_hdl": [
+      "age",
+      "anti_tpo",
+      "tc",
+      "hdl"
+    ],
+    "required_for_secondary_ogtt120": [
+      "age",
+      "anti_tpo",
+      "glu120"
+    ]
+  },
+  "columns": {
+    "id_candidates": [
+      "Nr KG",
+      "NR KG",
+      "nr kg",
+      "ID",
+      "Id",
+      "id",
+      "patient_id",
+      "subject_id",
+      "Numer",
+      "Nr"
+    ],
+    "age_candidates": [
+      "Wiek",
+      "wiek",
+      "Age",
+      "age"
+    ],
+    "core_features": {
+      "thyroid": {
+        "anti_tpo": [
+          "Anty-TPO (ATA_TPO)",
+          "ATA_TPO",
+          "ANTI_TPO",
+          "ATPO",
+          "TPO"
+        ],
+        "anti_tg_optional": [
+          "Anty-TG (p/c przeciw tyreoglobulinie) (ATG)",
+          "ATG",
+          "ANTI_TG"
+        ],
+        "tsh": [
+          "TSH (TSH)",
+          "TSH",
+          "L_TSH"
+        ],
+        "ft4_optional": [
+          "FT4 (FT4)",
+          "FT4",
+          "fT4",
+          "L_FT4"
+        ],
+        "ft3_optional": [
+          "FT3 (FT3)",
+          "FT3",
+          "fT3",
+          "L_FT3"
+        ]
+      },
+      "lipids": {
+        "tg": [
+          "Triglicerydy (TG)",
+          "TG",
+          "TRIGLICERYDY",
+          "TRIG"
+        ],
+        "hdl": [
+          "HDL cholesterol (HDL)",
+          "HDL",
+          "L_HDL"
+        ],
+        "tc_optional": [
+          "Cholesterol całkowity (TCHOL)",
+          "TCHOL",
+          "CHOL_TC",
+          "TC",
+          "CHOL"
+        ],
+        "ldl_optional": [
+          "LDL cholesterol (LDL)",
+          "LDL",
+          "L_LDL"
+        ]
+      },
+      "glucose": {
+        "glu0_optional": [
+          "Krzywa cukrowa - 2 punktowa (L_GLU_0)",
+          "GLU0",
+          "GLU_0",
+          "L_GLU_0",
+          "L_GLU0"
+        ],
+        "glu120_optional": [
+          "Krzywa cukrowa - 2 punktowa (GLU120)",
+          "GLU120",
+          "GLU_120",
+          "L_GLU_120",
+          "L_GLU120"
+        ]
+      },
+      "androgens_optional": {
+        "tt_optional": [
+          "Testosteron (L_TESTOS)",
+          "L_TESTOS",
+          "TESTOS",
+          "TESTOSTERON",
+          "TESTO"
+        ],
+        "ft_optional": [
+          "Testosteron wolny (O41) (TEST-F)",
+          "TEST-F",
+          "TEST_F",
+          "TESTF",
+          "Wolny testosteron"
+        ],
+        "shbg_optional": [
+          "SHBG (SHGB)",
+          "SHBG",
+          "SHGB",
+          "L_SHBG",
+          "L_SHGB"
+        ],
+        "dheas_optional": [
+          "DHEAS (DHEA)",
+          "DHEAS",
+          "DHEA-S",
+          "DHEA_S",
+          "L_DHEA",
+          "L_DHEAS"
+        ],
+        "andro_optional": [
+          "Androstendion (ANDRO)",
+          "ANDRO"
+        ],
+        "amh_optional": [
+          "AMH-anty Mullerian Hormon (AMH)",
+          "AMH",
+          "L_AMH"
+        ],
+        "lh_optional": [
+          "LH  (LH)",
+          "LH",
+          "L_LH"
+        ],
+        "fsh_optional": [
+          "FSH (FSH)",
+          "FSH",
+          "L_FSH"
+        ]
+      },
+      "insulin_optional": {
+        "ins0_optional": [
+          "INS0",
+          "INS_0",
+          "L_INS_0",
+          "L_INS0",
+          "Insulina 0'",
+          "Insulin 0"
+        ],
+        "ins120_optional": [
+          "INS120",
+          "INS_120",
+          "L_INS_120",
+          "L_INS120",
+          "Insulina 120'",
+          "Insulin 120"
+        ],
+        "insulin_optional": [
+          "Insulina (INSUL)",
+          "INSUL",
+          "INSULIN",
+          "Insulina"
+        ]
+      },
+      "medications_optional": {
+        "lt4_use_optional": [
+          "LT4",
+          "Levothyroxine",
+          "L-thyroxine",
+          "Euthyrox",
+          "Letrox",
+          "lewotyroksyna",
+          "leczenie_tarczycy",
+          "thyroid_treatment"
+        ]
+      }
+    }
+  },
+  "derived": {
+    "tg_hdl_ratio": {
+      "numerator": "tg",
+      "denominator": "hdl"
+    },
+    "non_hdl": {
+      "formula": "tc - hdl"
+    }
+  },
+  "data_parsing": {
+    "decimal_comma_handling": "replace_comma_with_dot",
+    "range_notation_handling": {
+      "pattern": "a|b",
+      "default_policy": "mean",
+      "alternatives_for_sensitivity": [
+        "median",
+        "first",
+        "second"
+      ],
+      "note": "Range-like strings are reduced to a single value for analysis."
+    },
+    "censoring_qualifiers_handling": {
+      "patterns": [
+        "<x",
+        ">x"
+      ],
+      "default_policy": "use_numeric_boundary",
+      "note": "Inequality qualifiers mapped to the numeric boundary (e.g., '<0.01' -> 0.01).",
+      "optional_sensitivity_for_antibodies": {
+        "enabled": false,
+        "policy": "half_lod",
+        "apply_to": [
+          "anti_tpo",
+          "anti_tg"
+        ]
+      }
+    },
+    "missing_tokens": [
+      "",
+      "nan",
+      "none",
+      "null",
+      "brak",
+      "nd",
+      "n/d"
+    ],
+    "preserve_raw_columns": true,
+    "write_parse_audit": true
+  },
+  "transforms": {
+    "winsor_q_low": 0.01,
+    "winsor_q_high": 0.99,
+    "log1p_candidates": [
+      "anti_tpo",
+      "tg",
+      "ins0",
+      "ins120"
+    ]
+  },
+  "logging": {
+    "enabled": true,
+    "log_file": "/content/outputs/run.log",
+    "write_qc_reports": true
+  },
+  "_snapshot_metadata": {
+    "saved_at": "2026-03-12T17:03:13.490045Z",
+    "python_version": "3.12.12",
+    "pandas_version": "2.2.2",
+    "numpy_version": "2.0.2"
+  }
+}
