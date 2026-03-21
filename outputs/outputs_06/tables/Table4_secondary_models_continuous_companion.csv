@@ -1,0 +1,5 @@
+term,beta_hat,CI_low,CI_high,n_boot_success,outcome,model,n,r_squared,age_centering_mean,interpretation
+TAI_A,-1.4254527411413684,-8.258056640409153,5.600871160388269,2000,non_hdl (continuous),Continuous companion: OLS (non_hdl ~ TAI_A + age_c),1053,0.0031630729033160776,21.441595441595442,Mean difference in non-HDL (mg/dL) for TAI+ vs TAI−
+age_c,0.9911443206727492,-0.17273353399310326,2.1215394356837347,2000,non_hdl (continuous),Continuous companion: OLS (non_hdl ~ TAI_A + age_c),1053,0.0031630729033160776,21.441595441595442,Per 1-year increase in centered age
+TAI_A,1.0170888190139264,-5.942301499517845,8.609276532500143,2000,glu120 (continuous),Continuous companion: OLS (glu120 ~ TAI_A + age_c),1035,0.001084123780684676,21.442512077294687,Mean difference in glucose 120' (mg/dL) for TAI+ vs TAI−
+age_c,-0.5931988807088717,-1.713735546598536,0.45468360423074394,2000,glu120 (continuous),Continuous companion: OLS (glu120 ~ TAI_A + age_c),1035,0.001084123780684676,21.442512077294687,Per 1-year increase in centered age
