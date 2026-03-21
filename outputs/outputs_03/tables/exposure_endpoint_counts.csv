@@ -1,0 +1,9 @@
+variable,n_non_missing,n_true,pct_true_among_non_missing
+ep_non_hdl,1183,271,22.91
+ep_ogtt120,1162,167,14.37
+ep_primary,1183,82,6.93
+euthyroid_strict,0,0,
+euthyroid_tsh_only,1182,1122,94.92
+tai_A,1055,84,7.96
+tai_B,1054,14,1.33
+tai_C,1055,53,5.02

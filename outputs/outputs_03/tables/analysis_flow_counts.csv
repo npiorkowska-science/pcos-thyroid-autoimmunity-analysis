@@ -1,0 +1,14 @@
+stage,n
+n_total_rows,1300
+anti_tpo_measured,1055
+tsh_measured,1182
+tai_A_defined,1055
+primary_endpoint_defined,1183
+non_hdl_endpoint_defined,1183
+ogtt120_endpoint_defined,1162
+analysis_primary_minimal,1053
+analysis_non_hdl_minimal,1053
+analysis_ogtt120_minimal,1035
+analysis_primary_eligible,1053
+analysis_non_hdl_eligible,1053
+analysis_ogtt120_eligible,1035
