@@ -1,0 +1,13 @@
+2026-03-12 17:02:55,912 | INFO | Logging initialized.
+2026-03-12 17:02:55,914 | INFO | Project: PCOS_TAI_cross_sectional v0.2.1
+2026-03-12 17:02:55,916 | INFO | Notebook: S00_config
+2026-03-12 17:02:55,919 | INFO | Python: 3.12.12
+2026-03-12 17:02:55,920 | INFO | pandas: 2.2.2
+2026-03-12 17:02:55,922 | INFO | numpy: 2.0.2
+2026-03-12 17:02:55,923 | INFO | Config path: /content/config.json
+2026-03-12 17:02:55,926 | INFO | Resolved input xlsx: /content/patients_results.xlsx
+2026-03-12 17:02:58,113 | INFO | Random seed set to 20260222
+2026-03-12 17:03:13,491 | INFO | Saved config snapshot: /content/reports/config_snapshot.json
+2026-03-12 17:03:13,492 | INFO | Saved environment report: /content/reports/environment_report.json
+2026-03-12 17:03:14,677 | INFO | Input file exists: True
+2026-03-12 17:03:14,681 | INFO | Input file size (bytes): 467021
