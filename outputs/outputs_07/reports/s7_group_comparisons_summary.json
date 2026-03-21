@@ -1,0 +1,134 @@
+{
+  "source_used": "/content/pcos_analysis.parquet",
+  "analysis_type": "group_comparisons_with_fdr",
+  "exposure": "tai_A",
+  "group_sizes": {
+    "n_total_defined_tai": 1055,
+    "n_tai_pos": 84,
+    "n_tai_neg": 971
+  },
+  "candidate_markers": [
+    "anti_tpo",
+    "tsh",
+    "ft4",
+    "anti_tg",
+    "tg",
+    "hdl",
+    "tc",
+    "ldl",
+    "non_hdl",
+    "tg_hdl_ratio",
+    "glu0",
+    "glu120",
+    "tt",
+    "ft",
+    "shbg",
+    "dheas",
+    "andro",
+    "amh",
+    "lh",
+    "fsh"
+  ],
+  "excluded_from_testing": [
+    "anti_tpo"
+  ],
+  "max_missing_pct_threshold": 80.0,
+  "markers_tested": [
+    "tsh",
+    "ft4",
+    "tg",
+    "hdl",
+    "tc",
+    "ldl",
+    "non_hdl",
+    "tg_hdl_ratio",
+    "glu0",
+    "glu120",
+    "tt",
+    "ft",
+    "dheas",
+    "andro",
+    "lh",
+    "fsh"
+  ],
+  "markers_dropped_for_missingness": [
+    "anti_tg",
+    "shbg",
+    "amh"
+  ],
+  "n_markers_tested": 16,
+  "fdr_threshold": 0.1,
+  "n_fdr_significant": 1,
+  "top_hits_by_fdr": [
+    {
+      "variable": "tsh",
+      "p_value": 4.402194669556414e-05,
+      "p_fdr_bh": 0.0007043511471290263,
+      "hedges_g": 0.8952420990707524,
+      "rank_biserial_corr": 0.2683971526755031
+    },
+    {
+      "variable": "andro",
+      "p_value": 0.2721725511499574,
+      "p_fdr_bh": 0.9635915839607043,
+      "hedges_g": -0.21603080202348846,
+      "rank_biserial_corr": -0.08994708994709
+    },
+    {
+      "variable": "ft4",
+      "p_value": 0.3498839304290968,
+      "p_fdr_bh": 0.9635915839607043,
+      "hedges_g": 0.19455444018292367,
+      "rank_biserial_corr": 0.061415794387930545
+    },
+    {
+      "variable": "tt",
+      "p_value": 0.5061319269145186,
+      "p_fdr_bh": 0.9635915839607043,
+      "hedges_g": -0.1283433392594296,
+      "rank_biserial_corr": -0.043691703485517874
+    },
+    {
+      "variable": "dheas",
+      "p_value": 0.7707216580151238,
+      "p_fdr_bh": 0.9635915839607043,
+      "hedges_g": -0.09397110481998329,
+      "rank_biserial_corr": -0.019158075601374613
+    },
+    {
+      "variable": "glu0",
+      "p_value": 0.8410816123305184,
+      "p_fdr_bh": 0.9635915839607043,
+      "hedges_g": 0.07534844759946635,
+      "rank_biserial_corr": 0.01357089004404588
+    },
+    {
+      "variable": "ft",
+      "p_value": 0.12770342696137402,
+      "p_fdr_bh": 0.9635915839607043,
+      "hedges_g": 0.07409699271033125,
+      "rank_biserial_corr": 0.10468136514648152
+    },
+    {
+      "variable": "tc",
+      "p_value": 0.47742134054302154,
+      "p_fdr_bh": 0.9635915839607043,
+      "hedges_g": -0.04844854239472562,
+      "rank_biserial_corr": -0.04668534080298781
+    },
+    {
+      "variable": "tg_hdl_ratio",
+      "p_value": 0.8477047964419199,
+      "p_fdr_bh": 0.9635915839607043,
+      "hedges_g": 0.04762499396892657,
+      "rank_biserial_corr": -0.012629613248808291
+    },
+    {
+      "variable": "ldl",
+      "p_value": 0.5722528821197491,
+      "p_fdr_bh": 0.9635915839607043,
+      "hedges_g": -0.04325384462408548,
+      "rank_biserial_corr": -0.03711484593837533
+    }
+  ]
+}
