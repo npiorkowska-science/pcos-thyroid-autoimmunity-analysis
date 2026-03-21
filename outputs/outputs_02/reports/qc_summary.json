@@ -1,0 +1,74 @@
+{
+  "source_used": "/content/pcos_base.parquet",
+  "n_rows": 1300,
+  "n_columns": 59,
+  "config_path": "/content/config.json",
+  "winsorization_enabled": false,
+  "log1p_candidates_from_config": [
+    "anti_tpo",
+    "tg",
+    "ins0",
+    "ins120"
+  ],
+  "derived_features_created": [
+    "tg_hdl_ratio",
+    "non_hdl"
+  ],
+  "availability_summary": [
+    {
+      "stage": "n_total_rows",
+      "n": 1300
+    },
+    {
+      "stage": "has_age",
+      "n": 1300
+    },
+    {
+      "stage": "has_anti_tpo",
+      "n": 1055
+    },
+    {
+      "stage": "has_tg",
+      "n": 1183
+    },
+    {
+      "stage": "has_hdl",
+      "n": 1183
+    },
+    {
+      "stage": "has_tc",
+      "n": 1183
+    },
+    {
+      "stage": "has_glu120",
+      "n": 1162
+    },
+    {
+      "stage": "eligible_primary_minimal",
+      "n": 1053
+    },
+    {
+      "stage": "eligible_non_hdl_minimal",
+      "n": 1053
+    },
+    {
+      "stage": "eligible_ogtt120_minimal",
+      "n": 1035
+    }
+  ],
+  "age_summary": {
+    "n_non_missing_age": 1300,
+    "age_min": 16.0,
+    "age_p25": 19.0,
+    "age_median": 21.0,
+    "age_p75": 22.0,
+    "age_max": 25.0,
+    "age_mean": 20.923076923076923,
+    "age_sd": 1.9489851867388472
+  },
+  "notable_unmapped_or_missing_analysis_fields": {
+    "lt4_use_present": true,
+    "ins0_present": true,
+    "ins120_present": true
+  }
+}
