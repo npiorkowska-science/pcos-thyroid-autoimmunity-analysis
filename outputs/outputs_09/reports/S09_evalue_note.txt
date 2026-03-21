@@ -1,0 +1,15 @@
+Sensitivity analysis using E-values
+
+E-values quantify the minimum strength of association that an unmeasured confounder
+would need to have with both the exposure (TAI) and the outcome to explain away
+the observed association, conditional on measured covariates.
+
+Important interpretation notes for this project:
+1. E-values were calculated from odds ratios using an RR-based approximation.
+2. The primary and secondary binary models in this pipeline are Firth logistic models,
+   selected because of sparse data / rare events.
+3. If a 95% CI includes 1.0, the E-value for the CI limit is 1.0 by definition.
+4. E-values do not resolve limitations due to cross-sectional design, residual selection issues,
+   or unavailable adiposity measures (e.g., BMI), and therefore should be interpreted as
+   a supplementary sensitivity analysis rather than proof of causal robustness.
+5. Rare events in the exposed group further limit precision of both effect estimates and E-values.
