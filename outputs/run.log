@@ -1,0 +1,6 @@
+2026-03-12 17:06:31,000 | INFO | Logging initialized in S01.
+2026-03-12 17:06:31,002 | INFO | Config path: /content/config.json
+2026-03-12 17:06:40,633 | INFO | Input file: /content/patients_results.xlsx
+2026-03-12 17:06:40,634 | INFO | Raw shape: (1300, 202)
+2026-03-12 17:06:42,786 | INFO | Matched 22/25 canonical variables.
+2026-03-12 17:06:42,787 | INFO | Missing required canonicals: None
