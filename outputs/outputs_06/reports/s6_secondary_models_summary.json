@@ -1,0 +1,75 @@
+{
+  "source_used": "/content/pcos_analysis.parquet",
+  "secondary_model_type": "firth_logistic",
+  "exposure": "tai_A",
+  "binary_endpoints": [
+    {
+      "endpoint": "ep_non_hdl",
+      "endpoint_label": "non-HDL ≥ 130 mg/dL",
+      "source_used": "/content/pcos_analysis.parquet",
+      "secondary_model_type": "firth_logistic",
+      "exposure": "tai_A",
+      "covariates": [
+        "TAI_A",
+        "age_c"
+      ],
+      "eligibility_flag": "analysis_non_hdl_eligible",
+      "n": 1053,
+      "events": 224,
+      "events_tai_pos": 19,
+      "n_tai_pos": 84,
+      "events_tai_neg": 205,
+      "n_tai_neg": 969,
+      "brier_score": 0.16672247616332028,
+      "auc": 0.5521066689643287,
+      "converged": true,
+      "optimizer_message": "Converged",
+      "n_iter": 6,
+      "optimizer": "firth_adjusted_score",
+      "bootstrap_success": 2000,
+      "bootstrap_nonconverged": 1,
+      "bootstrap_failed_or_skipped": 0,
+      "age_centering_mean": 21.441595441595442,
+      "warning": ""
+    },
+    {
+      "endpoint": "ep_ogtt120",
+      "endpoint_label": "OGTT 120' glucose ≥ 140 mg/dL",
+      "source_used": "/content/pcos_analysis.parquet",
+      "secondary_model_type": "firth_logistic",
+      "exposure": "tai_A",
+      "covariates": [
+        "TAI_A",
+        "age_c"
+      ],
+      "eligibility_flag": "analysis_ogtt120_eligible",
+      "n": 1035,
+      "events": 156,
+      "events_tai_pos": 14,
+      "n_tai_pos": 79,
+      "events_tai_neg": 142,
+      "n_tai_neg": 956,
+      "brier_score": 0.12795057326031029,
+      "auc": 0.5070228406405881,
+      "converged": true,
+      "optimizer_message": "Converged",
+      "n_iter": 7,
+      "optimizer": "firth_adjusted_score",
+      "bootstrap_success": 2000,
+      "bootstrap_nonconverged": 1,
+      "bootstrap_failed_or_skipped": 0,
+      "age_centering_mean": 21.442512077294687,
+      "warning": ""
+    }
+  ],
+  "continuous_companion_outputs": [
+    {
+      "outcome": "non_hdl (continuous)",
+      "n": 1053
+    },
+    {
+      "outcome": "glu120 (continuous)",
+      "n": 1035
+    }
+  ]
+}
