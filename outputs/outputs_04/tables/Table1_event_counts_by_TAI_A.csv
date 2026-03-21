@@ -1,0 +1,7 @@
+endpoint,group,n_events,n_non_missing,pct_events
+ep_primary,TAI+,4,84,4.76
+ep_primary,TAI−,66,969,6.81
+ep_non_hdl,TAI+,19,84,22.62
+ep_non_hdl,TAI−,205,969,21.16
+ep_ogtt120,TAI+,14,79,17.72
+ep_ogtt120,TAI−,142,956,14.85

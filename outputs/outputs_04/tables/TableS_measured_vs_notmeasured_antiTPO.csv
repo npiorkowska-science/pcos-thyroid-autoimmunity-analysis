@@ -1,0 +1,10 @@
+variable,measured,not_measured,n_non_missing_measured,n_non_missing_not_measured,n_missing_total,SMD,p_value,p_value_method
+age,"22 [20, 23]","18 [18, 19]",1055,245,0,1.684,0.0003332222592469177,permutation_median_diff
+tg,"76.8 [58.9, 105]","81 [60, 108]",1053,130,117,-0.089,0.2729090303232256,permutation_median_diff
+hdl,"57.7 [48.6, 67.1]","52 [45, 57.8]",1053,130,117,0.455,0.0003332222592469177,permutation_median_diff
+tc,"164 [146, 185]","168 [148, 191]",1053,130,117,-0.207,0.2845718093968677,permutation_median_diff
+tg_hdl_ratio,"1.28 [0.906, 2]","1.49 [1.07, 2.14]",1053,130,117,-0.175,0.02465844718427191,permutation_median_diff
+non_hdl,"104 [86.5, 126]","118 [97.2, 135]",1053,130,117,-0.42,0.0006664445184938354,permutation_median_diff
+glu0,"83.8 [80.3, 88]","85 [80, 88.5]",1036,127,137,-0.016,0.0773075641452849,permutation_median_diff
+glu120,"107 [91.4, 127]","105 [90, 118]",1035,127,138,0.23,0.5494835054981673,permutation_median_diff
+tsh,"1.79 [1.28, 2.47]","2.18 [1.62, 2.85]",1054,128,118,-0.382,0.0003332222592469177,permutation_median_diff
