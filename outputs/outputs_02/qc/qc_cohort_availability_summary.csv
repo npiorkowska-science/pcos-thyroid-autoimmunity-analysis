@@ -1,0 +1,11 @@
+stage,n
+n_total_rows,1300
+has_age,1300
+has_anti_tpo,1055
+has_tg,1183
+has_hdl,1183
+has_tc,1183
+has_glu120,1162
+eligible_primary_minimal,1053
+eligible_non_hdl_minimal,1053
+eligible_ogtt120_minimal,1035
