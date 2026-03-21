@@ -1,0 +1,72 @@
+{
+  "source_used": "/content/pcos_qc.parquet",
+  "n_rows": 1300,
+  "n_columns": 77,
+  "config_path": "/content/config.json",
+  "thresholds": {
+    "tg_hdl_cutoff": 3.5,
+    "non_hdl_cutoff": 130.0,
+    "ogtt120_cutoff": 140.0,
+    "tpo_uln": 34.0,
+    "tsh_uln": 4.0,
+    "tpo_high_titer": 100.0,
+    "tsh_euthyroid_low": 0.4,
+    "tsh_euthyroid_high": 4.0,
+    "ft4_ref_low_optional": null,
+    "ft4_ref_high_optional": null
+  },
+  "analysis_flow": [
+    {
+      "stage": "n_total_rows",
+      "n": 1300
+    },
+    {
+      "stage": "anti_tpo_measured",
+      "n": 1055
+    },
+    {
+      "stage": "tsh_measured",
+      "n": 1182
+    },
+    {
+      "stage": "tai_A_defined",
+      "n": 1055
+    },
+    {
+      "stage": "primary_endpoint_defined",
+      "n": 1183
+    },
+    {
+      "stage": "non_hdl_endpoint_defined",
+      "n": 1183
+    },
+    {
+      "stage": "ogtt120_endpoint_defined",
+      "n": 1162
+    },
+    {
+      "stage": "analysis_primary_minimal",
+      "n": 1053
+    },
+    {
+      "stage": "analysis_non_hdl_minimal",
+      "n": 1053
+    },
+    {
+      "stage": "analysis_ogtt120_minimal",
+      "n": 1035
+    },
+    {
+      "stage": "analysis_primary_eligible",
+      "n": 1053
+    },
+    {
+      "stage": "analysis_non_hdl_eligible",
+      "n": 1053
+    },
+    {
+      "stage": "analysis_ogtt120_eligible",
+      "n": 1035
+    }
+  ]
+}
